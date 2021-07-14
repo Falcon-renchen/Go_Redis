@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0a432d9-5dbf-4db0-92a1-3ad62f2b74ac" name="Default Changelist" comment="" />
+    <list default="true" id="b0a432d9-5dbf-4db0-92a1-3ad62f2b74ac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gedis/Iterator.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gedis/SliceResult.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gedis/StringOperation.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gedis/StringResult.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gedis/index.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis01/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/docker_redis.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/redis设置和查看密码.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +28,9 @@
     </option>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
     <option name="urls">
@@ -24,6 +40,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1pWECL5GiYkIvj7c2MlLTbeqY7K" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -32,6 +51,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
@@ -61,21 +81,29 @@
     <proxy>https://goproxy.io</proxy>
   </component>
   <component name="WindowStateProjectService">
-    <state width="869" height="147" key="GridCell.Tab.0.bottom" timestamp="1615303957075">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state x="533" y="184" key="#com.intellij.ide.util.MemberChooser" timestamp="1626274799699">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="869" height="147" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1615303957075" />
-    <state width="869" height="147" key="GridCell.Tab.0.center" timestamp="1615303957074">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state x="533" y="184" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1626274799699" />
+    <state width="1398" height="74" key="GridCell.Tab.0.bottom" timestamp="1626275655936">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="869" height="147" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1615303957074" />
-    <state width="869" height="147" key="GridCell.Tab.0.left" timestamp="1615303957074">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state width="1398" height="74" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1626275655936" />
+    <state width="1398" height="74" key="GridCell.Tab.0.center" timestamp="1626275655935">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="869" height="147" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1615303957074" />
-    <state width="869" height="147" key="GridCell.Tab.0.right" timestamp="1615303957075">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state width="1398" height="74" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1626275655935" />
+    <state width="1398" height="74" key="GridCell.Tab.0.left" timestamp="1626275655934">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="869" height="147" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1615303957075" />
+    <state width="1398" height="74" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1626275655934" />
+    <state width="1398" height="74" key="GridCell.Tab.0.right" timestamp="1626275655935">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="74" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1626275655935" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1626273518121">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1626273518121" />
   </component>
 </project>
