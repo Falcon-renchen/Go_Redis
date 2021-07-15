@@ -2,6 +2,7 @@ package gedis
 
 import (
 	"context"
+	"time"
 )
 
 //专门处理string类型的操作
@@ -13,8 +14,26 @@ func NewStringOperation() *StringOperation {
 	return &StringOperation{ctx: context.Background()}
 }
 
-func (this *StringOperation) Set() {
+//func (this *StringOperation) Set(key string,value interface{},attrs ...*OperationAttr) *StringResult {
+//	exp := OperationAttrs(attrs).Find(ATTR_EXPIRE)
+//	if exp == nil {
+//		exp = time.Second*0
+//	}
+//	return NewStringResult(Redis().Set(this.ctx,key,value,exp.(time.Duration)).Result())
+//}
 
+func (this *StringOperation) Set(key string, value interface{}, attrs ...*OperationAttr) *InterfaceResult {
+	exp := OperationAttrs(attrs).Find(ATTR_EXPIRE).Unwrap_Or(time.Second * 0).(time.Duration)
+	//锁
+	nx := OperationAttrs(attrs).Find(ATTR_NX).Unwrap_Or(nil)
+	if nx != nil {
+		return NewInterfaceResult(Redis().SetNX(this.ctx, key, value, exp).Result())
+	}
+	xx := OperationAttrs(attrs).Find(ATTR_XX).Unwrap_Or(nil)
+	if xx != nil {
+		return NewInterfaceResult(Redis().SetXX(this.ctx, key, value, exp).Result())
+	}
+	return NewInterfaceResult(Redis().Set(this.ctx, key, value, exp).Result())
 }
 
 //如果有错，交给此函数来处理

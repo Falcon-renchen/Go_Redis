@@ -17,12 +17,26 @@ func main() {
 
 	//fmt.Println(gedis.NewStringOperation().Get("name").Unwrap_Or("default value"))   //执行结果： shenyi
 
-	iter := gedis.
-		NewStringOperation().             // string类型的处理类
-		MGet("name", "age", "abc").Iter() //变成自己的迭代器
+	//iter := gedis.
+	//	NewStringOperation().             // string类型的处理类
+	//	MGet("name", "age", "abc").Iter() //变成自己的迭代器
+	//
+	//for iter.HasNext() {
+	//	fmt.Println(iter.Next())
+	//}
 
-	for iter.HasNext() {
-		fmt.Println(iter.Next())
-	}
+	fmt.Println(gedis.
+		NewStringOperation().Get("name").Unwrap())
+	//iter:=gedis.
+	//	 NewStringOperation(). // string类型的处理类
+	//	 MGet("name","age","abc").Iter() //变成自己的迭代器
+	//
+	//for iter.HasNext(){
+	//	fmt.Println(iter.Next())
+	//}
+
+	//fmt.Println(gedis.
+	//	NewStringOperation().
+	//	Set("name","shenyi",gedis.WithExpire(time.Second*15)))
 
 }
