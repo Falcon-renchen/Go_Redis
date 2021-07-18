@@ -22,3 +22,10 @@ func (this *StringResult) Unwrap_Or(str string) string {
 	}
 	return this.Result
 }
+
+func (this *StringResult) Unwrap_Or_Else(f func() string) string {
+	if this.Err != nil {
+		return f()
+	}
+	return this.Result
+}
