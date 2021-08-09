@@ -58,6 +58,15 @@ func main() {
 	//fmt.Println(newsCache.GetCache("news123").(*lib.NewsModel).NewsTitle)   // get from news
 
 	r := gin.New()
+	r.Use(func(context *gin.Context) {
+		defer func() {
+			if e := recover(); e != nil {
+				context.JSON(400, gin.H{"message": e})
+			}
+		}()
+		context.Next()
+	})
+
 	r.Handle("GET", "/news/:id", func(context *gin.Context) {
 		//1. 从对象池 获取新闻缓存 对象
 		newsCache := lib.NewsCache()
@@ -70,6 +79,10 @@ func main() {
 		//3.取缓存输出(一旦没有，上面的DBGetter会被调用)
 		context.Header("Content-type", "application/json")
 		context.String(200, newsCache.GetCache("news"+newsID).(string))
+
+		newsMode := lib.NewNewsModel()
+		newsCache.GetCacheForObject("news"+newsID, newsMode)
+		context.JSON(200, newsMode)
 	})
 
 	r.Run(":8080")

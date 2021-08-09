@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0a432d9-5dbf-4db0-92a1-3ad62f2b74ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/cachepool.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/dbconfig.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/dbgetter.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/models.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gedis/policy.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gedis/SimpleCache.go" beforeDir="false" afterPath="$PROJECT_DIR$/gedis/SimpleCache.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gedis/StringResult.go" beforeDir="false" afterPath="$PROJECT_DIR$/gedis/StringResult.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redis01/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/cachepool.go" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cachepool.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,14 +84,14 @@
     <proxy>https://goproxy.io</proxy>
   </component>
   <component name="WindowStateProjectService">
-    <state x="533" y="184" key="#com.intellij.ide.util.MemberChooser" timestamp="1626622022636">
+    <state x="533" y="184" key="#com.intellij.ide.util.MemberChooser" timestamp="1628523671362">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="533" y="184" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1626622022636" />
-    <state x="303" y="59" key="CommitChangelistDialog2" timestamp="1626361974280">
+    <state x="533" y="184" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1628523671362" />
+    <state x="303" y="59" key="CommitChangelistDialog2" timestamp="1626622252281">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="303" y="59" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1626361974280" />
+    <state x="303" y="59" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1626622252281" />
     <state width="1398" height="74" key="GridCell.Tab.0.bottom" timestamp="1626276591203">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
